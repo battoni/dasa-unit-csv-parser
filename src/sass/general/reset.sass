@@ -1,0 +1,64 @@
+@use ../variables/color
+
+html
+  box-sizing: border-box
+  scroll-behavior: smooth
+ 
+html, body, #app
+	background-color: $grayLight
+	font-family: 'Open Sans', sans-serif;
+	height: 100%
+
+#app
+	display: flex
+	flex-direction: column
+	height: 100%
+
+main
+	flex: 1 0 auto
+
+footer
+	flex-shrink: 0
+
+*
+  &,
+  &::before,
+  &::after
+    box-sizing: inherit
+
+body,figure,h1,h2,h3,h4,h5,h6
+	margin: 0
+	overflow-x: hidden
+li
+	list-style: none
+
+a, a:hover
+	color: initial
+	text-decoration: none
+
+svg
+	vertical-align: middle
+
+input,
+button
+	-webkit-appearance: none
+
+button:focus
+	outline: none
+
+input:focus,
+textarea:focus,
+    outline: unset
+
+input[type="text" i],
+input[type="email" i],
+input[type="url" i],
+	line-height: 50px
+
+::-moz-placeholder
+  opacity: 1
+  
+ul
+	margin: 0
+	padding: 0
+
