@@ -5,10 +5,10 @@
 
 <pre v-for="(item,index) in data" :key="index">
     {{ newEnum(item) }}: {<br>
-        name: {{ item[5] }},<br>
-        unitId: {{ item[4] }},<br>
-        glieseCode: {{ item[7] }},<br>
-        serviceDesk: {{ item[6] }},<br>
+        name: {{ `'${ item[5] }'` }},<br>
+        unitId: {{ `'${ item[4] }'` }},<br>
+        glieseCode: {{ `'${ item[7] }'` }},<br>
+        serviceDesk: {{ `'${ item[6] }'` }},<br>
     },
 </pre>
 
